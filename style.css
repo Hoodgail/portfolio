@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border box makes it so content does not go beyond web page */
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+a {
+    text-decoration: none;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+header {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    color: aliceblue;
+    background-color: rgba(23, 142, 201);
+}
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 15px;
+}
+
+main .hero {
+    justify-content: space-around;
+    min-height: 300px;
+    padding: 15px;
+    background-color: rgba(80, 152, 236, 0.5);
+    grid-auto-flow: column;
+}
+
+h2 {
+    margin: 15px;
+}
+
+.hero-child {
+    max-width: 50%;
+    text-align: center;
+}
+.extra {
+    text-align: center;
+    margin: 15px;
+}
+
+.coding {
+    /* background: url(./DALL·E\ 2022-11-10\ 01.24.51\ -\ person\ behind\ a\ computer\ screen\ with\ rundown\ coding\ syntax\ with\ white\ color\ scheme.png); */
+    position: relative;
+    z-index: 12;
+}
+
+.coding-info {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: small;
+}
+
+.designer-info {
+    font-family: cursive;
+}
+.hidden {
+    display: none;
+}
+
+.vl {
+    border-left: 2px solid green;
+    height: 50px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.projects .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    margin: 25px;
+    background-image: radial-gradient(#e66465, #9198e5);
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote {
+    width: 700px;
+    margin: 50px;
+    text-align: center;
+}
+.footer-form form {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
